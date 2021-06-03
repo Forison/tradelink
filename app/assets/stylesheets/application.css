@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ #body{
+   background: #02053a;
+ }
+
+.tile{
+  padding: 10px;
+  font-size: 4rem;
+  color: #00ff00;
+  font-weight: 700;
+  font-family: cursive;
+  border: 10px solid #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.board{
+  width: 350px;
+  background: #031a46;
+}
+
+.text-ligter{
+  color: #fff;
+}
+
+.position-absolute{
+  transform: translate(65%,0);
+}
+
+.card-img{
+  width: 100px;
+  border-radius: 50%;
+}
+
+.card{
+  width: 100%;
+  height: 100vh;
+}
+
+.small-text{
+  font-size: 14px;
+}
+
+.tic-tac-toe{
+  color: #fbff00;
+  font-family: cursive;
+  font-weight: 900;
+  transform: translate(500px, 0px);
+}
+
+img[alt="tradelink_image"]{
+  width: 30px;
+  height: 30px
+}
+
+.player-card{
+  background: #00ff00;
+}
