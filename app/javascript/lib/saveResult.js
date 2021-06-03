@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const saveResult = async (board) => {
+const saveResult = async (record) => {
   try {
     await axios({
       method: 'POST',
       url: '/records',
-      data: {record: {board}},
+      data: record,
     });
       return true;
   } catch (error) {

@@ -17,6 +17,10 @@
  #body{
    background: #02053a;
  }
+ 
+ .cursor-pointer{
+  cursor: pointer;
+ }
 
 .tile{
   padding: 10px;

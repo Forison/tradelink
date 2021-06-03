@@ -27,9 +27,9 @@ const Login = () => {
   
 
   return (
-    <div className="container">
+    <div className="container text-light">
       <div className="col-12 col-md-5 mx-auto shadow-sm p-5 mt-3 rounded">
-        <h6 className="text-dark">Log in to play game</h6>
+        <h6>Log in to play game</h6>
         <small className= {message ? 'visible alert alert-info' : 'invisible'} role="alert">{message ? message : ''}</small>
         <br />
         <form onSubmit={handleSubmit}>

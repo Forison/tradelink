@@ -9,7 +9,7 @@ const initialState = {
 		username: '',
     email: '',
   },
-  userRecords: [],
+  userRecords: '6',
   availableUsers: [],
   machineLevel: 'Easy',
   vsMode: 'Machine'

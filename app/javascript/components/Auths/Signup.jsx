@@ -30,9 +30,9 @@ const Signup = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container text-light">
       <div className="col-12 col-md-5 mx-auto shadow-sm p-5 mt-3 rounded">
-        <h6 className="text-dark">Signup to play </h6>
+        <h6>Signup to play </h6>
         <small className= {message ? 'visible alert alert-info' : 'invisible'} role="alert">{message ? message : ''}</small>
         <br />
         <form onSubmit={handleSubmit}>

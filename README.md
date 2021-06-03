@@ -1,11 +1,11 @@
 # Tic Tac Toe
-
-
+[tic-tac-toe.png](./tic-tac-toe.png)
 ## Description
 This is a tic tac toe game that allows the users to be able to play with machine or a friend.
 
 ## How To Play
 Create an account, You will be redirected to the game board after the account creation, you may login by clicking the login link if you already have an account. You mak look for a friend in the available user list and play with them live
+
 
 ## Technologies
 
@@ -16,7 +16,7 @@ Create an account, You will be redirected to the game board after the account cr
 
 ## Features
 
-- Play with friend, play with,
+- Play with friend
 - Play with machine (tradelink bot)
 
 ## Potential Features

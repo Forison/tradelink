@@ -4,7 +4,7 @@ class RecordsController < ApplicationController # :nodoc:
   before_action :authorize
 
   def index
-    render json: { record: @current_user.records }, status: :ok
+    render json: { record: Record.user_wins(@current_user.username) }, status: :ok
   end
 
   def create

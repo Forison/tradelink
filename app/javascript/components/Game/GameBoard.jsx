@@ -118,8 +118,8 @@ const GameBoard = () => {
           endGame: true,
         });
         // save results and clear board
-        let gameResult = {opponent: opponent.username, winner: playerName};
-        saveResult(gameResult);
+        let record= {opponent: opponent.username, winner: playerName};
+        saveResult(record);
         setTimeout(() => {
           setState(initialState);
         }, 3000);
@@ -129,7 +129,7 @@ const GameBoard = () => {
           message: 'The game ended in a draw',
           endGame: true,
         });
-        saveResult(gameResult);
+        saveResult(record);
         setTimeout(() => {
           setState(initialState);
         }, 3000);

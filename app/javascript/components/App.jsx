@@ -27,7 +27,19 @@ const App = () => {
           />
 
           <Route
-            path={"/game" || "/"}
+            path={"/game"}
+            exact
+            strict
+            render={(props) => {
+              if (currentUser.user.isLogin) {
+                return (<Game {...props} />);
+              }
+              return (<Redirect to="/log_in" />);
+            }}
+          />
+
+          <Route
+            path={"/"}
             exact
             strict
             render={(props) => {

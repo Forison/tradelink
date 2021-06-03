@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 const Machine = ({image, userInfo}) => {
   const dispatch = useDispatch();
@@ -30,4 +31,8 @@ const Machine = ({image, userInfo}) => {
     </div>
   )
 }
+Machine.propTypes = {
+  image: PropTypes.string,
+  userInfo: PropTypes.object,
+};
 export default Machine;
