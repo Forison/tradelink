@@ -2,10 +2,10 @@
 
 require 'rails_helper'
 
-RSpec.describe Record, type: :model do 
+RSpec.describe Record, type: :model do
   describe 'associations of record to user model' do
     context 'belongs to users' do
-      it { should belong_to(:user)}
+      it { should belong_to(:user) }
     end
   end
 
