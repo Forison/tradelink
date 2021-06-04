@@ -1,7 +1,7 @@
 import {initialState} from '../constant';
 
 const opponentReducer = (state = initialState, action) => {
-  
+ 
 	switch (action.type) {
 		case 'INVITE_OPPONENT': return {
       ...state, 

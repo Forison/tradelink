@@ -11,12 +11,13 @@ const Index = () => {
   const newUser = useSelector(state=>state.user);
   const machineInfo = {username: 'Tradelink bot', email: 'bot@bot'};
   const vs = useSelector(state=>state.vsMode);
-  const opponent = useSelector(state=>state.opponent);
+  const {opponent} = useSelector(state=>state.opponent);
+  
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(userRecords());
   }, [])
-  
+  console.log(vs)
   return (
     <div className="container-fluid">
       <h1 className="tic-tac-toe text-center position-absolute">TIC TAC TOE </h1>
@@ -28,7 +29,7 @@ const Index = () => {
           <GameBoard />
         </div>
         <div className="col-3 p-0">
-          {vs === 'Machine' ? 
+          {vs.vsMode === 'Machine' ? 
             <Player image={Machine} userInfo={machineInfo} />
           : 
             <Player image={Opponent} userInfo={opponent} />
