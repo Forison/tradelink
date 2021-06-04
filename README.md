@@ -18,7 +18,7 @@ Create an account, You will be redirected to the game board after the account cr
 
 - Play with friend
 - Play with machine (tradelink bot)
-
+ 
 ## How To play/ How it functions
 
 - Create an account or use existing users existing users from the list
@@ -30,6 +30,9 @@ Create an account, You will be redirected to the game board after the account cr
 - You can play with humans by inviting a login user
 - Select the invite opponent to check for available users and invite them
 - Result of play is the stored and added to your stats
+
+[video Presentation](https://www.loom.com/share/c2cb32eeff494f6393469af9287fd53f)
+
 ## Potential Features
 
 - Increase channel for lot more user engagement
@@ -56,9 +59,9 @@ $ bundle install
 $ rails s
 ```
 
-## Deployment
-
-The demo page can be found [HERE]()
+```
+rspec for testing
+```
 
 ## Designed and developed by
 

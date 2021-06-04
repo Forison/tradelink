@@ -132,6 +132,7 @@ const GameBoard = () => {
         saveResult(record);
         setTimeout(() => {
           setState(initialState);
+          setTurn(0);
         }, 3000);
       }else if (!hasWon && turn !== 4){
         // intiatialize machine play 
