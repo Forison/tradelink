@@ -17,7 +17,7 @@ const Index = () => {
   useEffect(() => {
     dispatch(userRecords());
   }, [])
-  console.log(vs)
+ 
   return (
     <div className="container-fluid">
       <h1 className="tic-tac-toe text-center position-absolute">TIC TAC TOE </h1>
