@@ -25,14 +25,14 @@ const GameBoard = () => {
   const [turn, setTurn] = useState(0);
   const vsMachineMode = useSelector(state=>state.vsMode);
   const {user} = useSelector(state=>state.user);
-  const {opponent} = useSelector(state=>state.opponent);
+  const opponent = useSelector(state=>state.opponent);
   let {machineLevel} = useSelector(state=> state.machineLevel);
   
   const handleClick = (row, col) => {
     if(!state.waiting)
        handleUserPlay(row, col, user.username);
   }
-
+  
   const handleMachinePlay = (level) => {
     const{easy, medium, hard} = machine;
     const {validMove, results} = gameLogic;

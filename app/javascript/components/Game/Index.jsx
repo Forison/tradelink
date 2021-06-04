@@ -12,7 +12,7 @@ const Index = () => {
   const machineInfo = {username: 'Tradelink bot', email: 'bot@bot'};
   const vs = useSelector(state=>state.vsMode);
   const {opponent} = useSelector(state=>state.opponent);
-  
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(userRecords());

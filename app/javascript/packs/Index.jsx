@@ -27,7 +27,6 @@ const store = createStore(persistedReducer, initialState, applyMiddleware(thunk)
 const persistor = persistStore(store);
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Provider store={store}>
