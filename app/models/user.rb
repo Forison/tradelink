@@ -12,5 +12,5 @@ class User < ApplicationRecord # :nodoc:
   has_many :records, dependent: :destroy
 
   scope :find_user, ->(email) { find_by(email: email) }
-  scope :all_but_current_user, ->(current_user_id) { where.not(id: current_user_id) }
+  scope :all_but_current_user, ->(current_user_id) { where.not(id: current_user_id).where(isLogin: true) }
 end
