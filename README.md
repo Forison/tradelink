@@ -19,6 +19,17 @@ Create an account, You will be redirected to the game board after the account cr
 - Play with friend
 - Play with machine (tradelink bot)
 
+## How To play/ How it functions
+
+- Create an account or use existing users existing users from the list
+  > To use existing users run `rails db:seed`
+  > {username: addo, email: addo@yahoo.com} or username: forison, email: forison@yahoo.com 
+- You will automatically have the ability to play with tradelink bot after login or sign up
+- Adjust difficulty mode tradelink bot.
+- Play with bot
+- You can play with humans by inviting a login user
+- Select the invite opponent to check for available users and invite them
+- Result of play is the stored and added to your stats
 ## Potential Features
 
 - Increase channel for lot more user engagement
